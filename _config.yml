@@ -42,6 +42,7 @@ plugins:
   - jekyll-feed
   - jekyll-toc
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 header_pages:
   -
