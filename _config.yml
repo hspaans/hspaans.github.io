@@ -30,7 +30,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username:  hspaans
 # permalink: pretty
-permalink: /blog/:year/:month/:day/:title/
+# permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
 google_analytics: UA-185750255-1
 
 theme: minima
@@ -42,6 +43,7 @@ plugins:
   - jekyll-feed
   - jekyll-toc
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 header_pages:
   -
