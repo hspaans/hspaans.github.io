@@ -41,6 +41,7 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-redirect-from
 
 header_pages:
   -
