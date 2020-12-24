@@ -8,7 +8,7 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   "appPort": [],
-  "postCreateCommand": "",
+  "postCreateCommand": "bundle install",
   "remoteUser": "vscode",
   "extensions": [
     "github.vscode-pull-request-github",
