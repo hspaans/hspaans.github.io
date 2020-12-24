@@ -1,10 +1,15 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "jekyll serve",
-            "type": "shell",
-            "command": "bundle exec jekyll serve"
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "jekyll serve",
+      "type": "shell",
+      "command": "bundle exec jekyll serve"
+    },
+    {
+      "label": "bundle install",
+      "type": "shell",
+      "command": "bundle install"
+    }
+  ]
 }

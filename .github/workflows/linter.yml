@@ -44,6 +44,7 @@ jobs:
         run: |
           mkdir .github/linters
           cp .htmlhintrc .github/linters/
+          cp .dockerfilelintrc .github/linters/
 
       ################################
       # Run Linter against code base #
