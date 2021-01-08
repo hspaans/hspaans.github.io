@@ -1,4 +1,4 @@
-FROM ruby:2.6.6
+FROM ruby:2.7.2
 
 # LABEL org.opencontainers.image.description="Python devcontainer for VSCode or Codespaces"
 # LABEL org.opencontainers.image.source=https://github.com/hspaans/python-devcontainer
