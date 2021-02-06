@@ -23,7 +23,7 @@ jobs:
           cp .dockerfilelintrc .github/linters/
 
       - name: Lint Code Base
-        uses: github/super-linter@v3.14.4
+        uses: github/super-linter@v3.14.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
