@@ -1,0 +1,74 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run webserver",
+            "type": "shell",
+            "command": "sphinx-autobuild --port 8000 docs/ build/",
+            "dependsOn": [
+                "make -f Makefile clean"
+            ]
+        },
+        {
+            "label": "make -f Makefile clean",
+            "type": "shell",
+            "command": "make -f Makefile clean",
+        },
+        {
+            "label": "make -f Makefile linkcheck",
+            "type": "shell",
+            "command": "make -f Makefile linkcheck",
+            "dependsOn": [
+                "make -f Makefile clean"
+            ]
+        },
+        {
+            "label": "make -f Makefile html",
+            "type": "shell",
+            "command": "make -f Makefile html",
+            "problemMatcher": [
+                {
+                    "owner": "sphinx",
+                    "pattern": [
+                        {
+                            "regexp": "^(.*?):(\\d+): (.*): (.*)$",
+                            "file": 1,
+                            "line": 2,
+                            "severity": 3,
+                            "message": 4
+                        }
+                    ]
+                }
+            ],
+            "dependsOn": [
+                "make -f Makefile clean"
+            ]
+        },
+        {
+            "label": "make html",
+            "type": "shell",
+            "dependsOn": [
+                "make -f Makefile html"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "make linkcheck",
+            "type": "shell",
+            "dependsOn": [
+                "make -f Makefile linkcheck"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
