@@ -40,12 +40,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.3
-          bundler-cache: true
-
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -54,7 +48,7 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e .
+          python -m pip install --user -e .
 
       - name: Run Sphinx build for html
         run: |
