@@ -74,7 +74,7 @@ commands = [
 description = "run linting on code base"
 dependency_groups = ["lint"]
 commands = [
-    ["flake8", "src{/}tox"],
+    ["flake8", "src"],
     ["flake8", "tests"]
 ]
 
