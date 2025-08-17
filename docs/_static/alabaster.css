@@ -1,0 +1,8 @@
+img.logo {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+h1.logo.logo-name {
+    text-align: center;
+}

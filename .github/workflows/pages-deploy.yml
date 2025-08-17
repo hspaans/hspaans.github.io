@@ -6,7 +6,9 @@ on:
       - main
       - master
     paths-ignore:
+      - .devcontainer
       - .gitignore
+      - .vscode
       - README.md
       - LICENSE
 

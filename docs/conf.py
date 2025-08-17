@@ -6,6 +6,7 @@ from datetime import datetime
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Hans Spaans'
+project_title = 'GitBiz evangelist that follows the enlightenment path of CI/CD towards FinOps'
 copyright = f"{datetime.now().year}, {project}"
 author = 'Hans Spaans'
 
@@ -35,23 +36,12 @@ html_baseurl = 'https://hspaans.github.io/'
 html_title = project
 html_theme = 'furo'
 html_static_path = ['_static']
-
-if html_theme == "alabaster":
-    html_theme_options = {}
-elif html_theme == "furo":
-    html_theme_options = {}
-else:
-    html_theme_options = {}
+html_extra_path = ['robots.txt']
 
 if html_theme == "alabaster":
     html_css_files = [
-        'custom.css',
+        'alabaster.css',
     ]
-    html_theme_options = {
-        'description': 'GitOps || BizDevSecOps || FinOps',
-        'logo': 'logo.png',
-        'logo_name': True,
-    }
     html_sidebars = {
         "*": [
             'about.html',
@@ -60,15 +50,40 @@ if html_theme == "alabaster":
             'relations.html',
         ]
     }
-elif html_theme == "furo":
-    html_sidebars = {}
-else:
-    html_sidebars = {
-        "**": [
-            "sidebar-field.html",
-            "sidebar-nav.html",
-        ]
+    html_theme_options = {
+        'description': 'GitBiz evangelist that follows the enlightenment path of CI/CD towards FinOps',
+        'logo': 'logo-light.jpg',
+        'logo_name': True,
     }
+elif html_theme == "furo":
+    html_css_files = [
+        'furo.css',
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+    ]
+    html_sidebars = {}
+    html_theme_options = {
+        "light_logo": "logo-light.jpg",
+        "dark_logo": "logo-dark.jpg",
+        "footer_icons": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/hspaans/hspaans.github.io",
+                "html": "",
+                "class": "fa-brands fa-solid fa-github",
+            },
+        ],
+        "source_repository": "https://github.com/hspaans/hspaans.github.io/",
+        "source_branch": "master",
+        "source_directory": "docs/",
+        # "announcement": "test",
+    }
+else:
+    # Make sure everything is reset if html_theme is unknown
+    html_css_files = []
+    html_theme_options = {}
+    html_sidebars = {}
 
 # -- Extension configuration -------------------------------------------------
 
@@ -79,7 +94,7 @@ source_suffix = {
 }
 
 if 'ablog' in extensions:
-    blog_path = 'posts'
+    blog_path = 'blog'
     blog_title = project
     blog_baseurl = html_baseurl + blog_path + '/'
     blog_feed_archives = True
@@ -106,6 +121,3 @@ if 'sphinx_toolbox.wikipedia' in extensions:
 if 'sphinx_sitemap' in extensions:
     sitemap_locales = [None]
     sitemap_url_scheme = "{link}"
-    exclude_patterns = [
-        'posts/drafts*',
-    ]

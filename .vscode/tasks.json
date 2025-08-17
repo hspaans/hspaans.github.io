@@ -8,26 +8,30 @@
             "type": "shell",
             "command": "sphinx-autobuild --port 8000 docs/ build/",
             "dependsOn": [
-                "make -f Makefile clean"
+                "remove development environment"
             ]
         },
         {
-            "label": "make -f Makefile clean",
+            "label": "remove development environment",
             "type": "shell",
-            "command": "make -f Makefile clean",
+            "command": "sphinx-build -M clean docs build",
         },
         {
-            "label": "make -f Makefile linkcheck",
+            "label": "run linkcheck",
             "type": "shell",
-            "command": "make -f Makefile linkcheck",
+            "command": "sphinx-build -M linkcheck docs build",
             "dependsOn": [
-                "make -f Makefile clean"
-            ]
+                "remove development environment"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
         },
         {
-            "label": "make -f Makefile html",
+            "label": "build html",
             "type": "shell",
-            "command": "make -f Makefile html",
+            "command": "sphinx-build -M html docs build",
             "problemMatcher": [
                 {
                     "owner": "sphinx",
@@ -43,30 +47,10 @@
                 }
             ],
             "dependsOn": [
-                "make -f Makefile clean"
-            ]
-        },
-        {
-            "label": "make html",
-            "type": "shell",
-            "dependsOn": [
-                "make -f Makefile html"
+                "remove development environment"
             ],
-            "problemMatcher": [],
             "group": {
                 "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "make linkcheck",
-            "type": "shell",
-            "dependsOn": [
-                "make -f Makefile linkcheck"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "test",
                 "isDefault": true
             }
         }

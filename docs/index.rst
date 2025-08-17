@@ -1,7 +1,4 @@
-.. hspaans.github.io documentation master file, created by
-   sphinx-quickstart on Sun Mar  9 13:54:39 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+:hide-toc:
 
 Home
 ====
@@ -10,8 +7,8 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
-Posts
-------------
+Blog Posts
+----------
 
 .. postlist:: 10
    :date: %b %d, %Y
@@ -19,11 +16,9 @@ Posts
    :format: {title} - {date}
    :excerpts:
 
-
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    about
-   posts
-
+   blog
