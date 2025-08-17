@@ -131,4 +131,4 @@ if 'sphinx_sitemap' in extensions:
 
 if os.getenv("GITHUB_ACTIONS"):
     extensions.append("sphinxcontrib.googleanalytics")
-    googleanalytics_id = "G-N7F9Y9PQSX"
+    googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXXXXXXX")
