@@ -130,7 +130,8 @@ if 'sphinx_sitemap' in extensions:
     sitemap_url_scheme = "{link}"
 
 if os.getenv("GITHUB_ACTIONS"):
-    extensions.append("sphinxcontrib.googleanalytics")
+    if "sphinxcontrib.googleanalytics" not in extensions:
+        extensions.append("sphinxcontrib.googleanalytics")
     googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID")
     if googleanalytics_id and googleanalytics_id.startswith("G-") and len(googleanalytics_id) > 4:
         extensions.append("sphinxcontrib.googleanalytics")
