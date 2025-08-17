@@ -1,5 +1,5 @@
 =====
-Posts
+Blog
 =====
 
 .. postlist::

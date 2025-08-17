@@ -1,0 +1,12 @@
+.sidebar-logo {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.sidebar-brand-text {
+    text-align: center;
+}
+
+.sidebar-brand-subtitle {
+    font-size: 80%;
+}

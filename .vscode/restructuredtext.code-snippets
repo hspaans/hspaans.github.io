@@ -1,0 +1,12 @@
+{
+  "Code-Block": {
+    "prefix": ["code"],
+    "body": [".. code-block:: ${1}", "\t:caption: ${2:Example caption string}", "\t", "\t$0"],
+    "description": "ReStructured code-block"
+  },
+  "Post": {
+    "prefix": ["post"],
+    "body": [".. post:: ${1}", "\t:tags: ${2:draft}", "\t:category: ${3:Uncategorized}"],
+    "description": "Ablog post"
+  }
+}
