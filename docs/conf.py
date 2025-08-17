@@ -68,6 +68,12 @@ elif html_theme == "furo":
         "dark_logo": "logo-dark.jpg",
         "footer_icons": [
             {
+                "name": "RSS",
+                "url": "https://hspaans.github.io/blog/atom.xml",
+                "html": "",
+                "class": "fas fa-rss",
+            },
+            {
                 "name": "GitHub",
                 "url": "https://github.com/hspaans/hspaans.github.io",
                 "html": "",
