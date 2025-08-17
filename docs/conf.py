@@ -1,6 +1,7 @@
 """Configuration file for the Sphinx documentation builder."""
 
 from datetime import datetime
+import os
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -127,3 +128,9 @@ if 'sphinx_toolbox.wikipedia' in extensions:
 if 'sphinx_sitemap' in extensions:
     sitemap_locales = [None]
     sitemap_url_scheme = "{link}"
+
+if os.getenv("GITHUB_ACTIONS") and os.getenv("GOOGLE_ANALYTICS_ID"):
+    googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID")
+    if googleanalytics_id and googleanalytics_id.startswith("G-") and len(googleanalytics_id) > 4:
+        if "sphinxcontrib.googleanalytics" not in extensions:
+            extensions.append("sphinxcontrib.googleanalytics")
