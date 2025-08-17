@@ -5,7 +5,7 @@
 Why start blogging
 ==================
 
-Learning new skills and improving existing skills was and still is important, and especially communication and planning skills are in higher demand than ever. These skills aren't learned and mastered overnights which also came to light in conversations with different software and infrastructure engineers as they were looking on where and how to make their next step in their career.
+Learning new skills and improving existing skills was and still is important, and especially communication and planning skills are in higher demand than ever. These skills aren't learned and mastered overnight which also came to light in conversations with different software and infrastructure engineers as they were looking on where and how to make their next step in their career.
 
 One option is to make it part of a development plan to get training and coaching, but this requires that you already have a clear goal. A second option is to start developing yourself to the point where you know what you want or others see a path for you. This seems to be a daunting task but in the current day and age may be easier than ever before.
 
