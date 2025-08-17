@@ -71,7 +71,7 @@ elif html_theme == "furo":
                 "name": "GitHub",
                 "url": "https://github.com/hspaans/hspaans.github.io",
                 "html": "",
-                "class": "fa-brands fa-solid fa-github",
+                "class": "fa-brands fa-github",
             },
         ],
         "source_repository": "https://github.com/hspaans/hspaans.github.io/",
