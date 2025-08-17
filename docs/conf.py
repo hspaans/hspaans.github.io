@@ -96,13 +96,13 @@ source_suffix = {
 if 'ablog' in extensions:
     blog_path = 'blog'
     blog_title = project
-    blog_baseurl = html_baseurl + blog_path + '/'
+    blog_baseurl = html_baseurl
     blog_feed_archives = True
-    blog_feed_fulltext = False
+    blog_feed_fulltext = True
     blog_feed_length = 10
     blog_feed_author = author
     blog_feed_language = 'en'
-    blog_feed_domain = html_baseurl
+    blog_post_pattern = "blog/*.rst"
 
 if 'sphinx.ext.intersphinx' in extensions:
     intersphinx_mapping = {
