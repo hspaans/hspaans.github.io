@@ -134,6 +134,3 @@ if os.getenv("GITHUB_ACTIONS"):
         extensions.append("sphinxcontrib.googleanalytics")
     googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXX")
 
-if "sphinxcontrib.googleanalytics" not in extensions:
-    extensions.append("sphinxcontrib.googleanalytics")
-googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXX")
