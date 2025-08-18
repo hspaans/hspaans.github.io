@@ -56,7 +56,7 @@ jobs:
         run: |
           sphinx-build -b html docs build/html
         env:
-          GOOGLE_ANALYTICS_ID: ${{ vars.GOOGLE_ANALYTICS_ID }} 
+          GOOGLE_ANALYTICS_ID: ${{ vars.GOOGLE_ANALYTICS_ID }}
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
