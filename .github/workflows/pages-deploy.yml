@@ -11,6 +11,7 @@ on:
       - .vscode
       - README.md
       - LICENSE
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -80,7 +81,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install yamllint pymarkdownlint rstcheck
+          python -m pip install yamllint pymarkdownlnt rstcheck
 
       - name: Lint with yamllint
         run: yamllint --format github `git ls-files '*.yml' '*.yaml'`
@@ -89,7 +90,7 @@ jobs:
         run: echo "::add-matcher::.github/annotations/pymarkdown-problem-matcher.json"
 
       - name: Lint with pymarkdownlint
-        run: pymarkdownlnt scan `git ls-files '*.md'`
+        run: pymarkdownlnt scan `git ls-files '*.md' ':!:*TEMPLATE/*md'`
 
   deploy:
     environment:
@@ -101,6 +102,7 @@ jobs:
       - lint
 
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
