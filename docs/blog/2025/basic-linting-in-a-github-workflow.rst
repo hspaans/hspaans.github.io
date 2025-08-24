@@ -116,7 +116,7 @@ The final step is to make sure that the `.yamllint.yml` configuration file is in
 Validate Markdown files
 #######################
 
-The second linter is :github:repo:`pymarkdownlint <jorisroovers/pymarkdownlint>` that validates Markdown files. This linter is useful as it can catch a wide range of issues in Markdown files, including formatting issues, broken links, and other common problems. As with yamllint we will first run the command on our own local machine to see what issues it finds. Here we will directly go for all files tracked by git with the `git ls-files` command.
+The second linter is :github:repo:`pymarkdownlnt <jackdewinter/pymarkdown>` that validates Markdown files. This linter is useful as it can catch a wide range of issues in Markdown files, including formatting issues, broken links, and other common problems. As with yamllint we will first run the command on our own local machine to see what issues it finds. Here we will directly go for all files tracked by git with the `git ls-files` command.
 
 .. code-block:: console
     :caption: Linting Markdown files on the commandline
