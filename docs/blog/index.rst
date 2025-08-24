@@ -1,8 +1,8 @@
-==========
-Blog Posts
-==========
+====
+Blog
+====
 
-.. postlist:: 10
+.. postlist::
    :date: %b %d, %Y
    :list-style: dot
    :format: {title} - {date}
