@@ -17,8 +17,9 @@ Blog Posts
    :excerpts:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
 
    about
-   blog
+   .. blog
+   blog/index
