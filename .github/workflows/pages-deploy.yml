@@ -11,6 +11,7 @@ on:
       - .vscode
       - README.md
       - LICENSE
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -101,6 +102,7 @@ jobs:
       - lint
 
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
