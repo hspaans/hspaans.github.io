@@ -42,7 +42,7 @@ In the workflow file below that needs to be placed in the `.github/workflows/` d
           - name: Install dependencies
             run: |
               python -m pip install --upgrade pip
-              python -m pip install yamllint pymarkdownlint rstcheck
+              python -m pip install yamllint pymarkdownlnt rstcheck
 
 Now the workflow file is in place it can run but it needs to be configured to actually do something. This is where the individual linters come into play and need to be added to the workflow as extra steps.
 
@@ -121,8 +121,12 @@ The second linter is :github:repo:`pymarkdownlint <jorisroovers/pymarkdownlint>`
 .. code-block:: console
     :caption: Linting Markdown files on the commandline
 
-    $ pymarkdownlnt scan `git ls-files '*.md'`
+    $ pymarkdownlnt scan `git ls-files '*.md' ':!:*TEMPLATE/*md'`
     README.md:33:3: MD047: Each file should end with a single newline character. (single-trailing-newline)
+
+.. note::
+
+  The example command above shows how to run `pymarkdownlnt` on all Markdown files in the repository, excluding those in the `TEMPLATE` directory as those are most of the time not compliant to make them work in GitHub repositories.
 
 As `pymarkdownlnt` doesn't have a built-in GitHub format option we need to create our own problem matcher that can interpret the output of the linter and convert it into a format that GitHub can understand. The example below shows a simple problem matcher that can be used for this purpose. This file needs to be placed in the `.github/annotations/` directory of your repository.
 
@@ -155,8 +159,8 @@ Now we need to add the problem matcher to our workflow file before the linting s
       - name: Add problem matcher
         run: echo "::add-matcher::.github/annotations/pymarkdown-problem-matcher.json"
 
-      - name: Lint with pymarkdownlint
-        run: pymarkdownlnt scan `git ls-files '*.md'`
+      - name: Lint with pymarkdownlnt
+        run: pymarkdownlnt scan `git ls-files '*.md' ':!:*TEMPLATE/*md'`
 
 Similar to with yamllint we also need to make sure that the configuration file for `pymarkdownlnt` is included in the repository. The configuration file below is a good starting point and can be adjusted as needed. The example below disables the MD013 rule that checks for line length as this can be annoying when writing Markdown files.
 
