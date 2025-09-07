@@ -130,5 +130,5 @@ if 'sphinx_sitemap' in extensions:
     sitemap_locales = [None]
     sitemap_url_scheme = "{link}"
 
-if os.getenv("GITHUB_ACTIONS") and "sphinxcontrib.googleanalytics" in extensions:
+if os.getenv("GITHUB_ACTIONS"):
     googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXX")
