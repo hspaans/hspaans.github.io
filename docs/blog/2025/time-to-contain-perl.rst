@@ -46,7 +46,7 @@ Despite its strengths, Perl has several challenges that have contributed to its 
 4. **Talent Pool**: As newer generations of developers enter the workforce, many are less familiar with Perl, making it harder to find skilled developers to maintain and extend Perl codebases.
 5. **Ecosystem**: The ecosystem around Perl has not kept pace with modern development practices, making it less attractive for new projects.
 
-While commercial support for Perl exists, it is not as widespread as for other languages like Java, Python, or JavaScript. This can make it challenging for organizations to find the necessary support and resources to manage their Perl code effectively. This also affects the availability of training and development resources for teams working with Perl as new developers may to find and hire.
+While commercial support for Perl exists, it is not as widespread as for other languages like Java, Python, or JavaScript. This can make it challenging for organizations to find the necessary support and resources to manage their Perl code effectively. This also affects the availability of training and development resources for teams working with Perl, as new developers may be difficult to find and hire.
 
 The Case for Containment
 ------------------------
