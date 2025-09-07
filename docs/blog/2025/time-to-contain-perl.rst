@@ -1,5 +1,5 @@
 .. post:: 2025-09-06 10:00:00
-    :tags: life cycle management, technical debt, containted, perl
+    :tags: life cycle management, technical debt, contained, perl
     :category: Architecture
 
 Time to contain Perl?
