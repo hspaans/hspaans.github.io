@@ -5,9 +5,9 @@
 Deleting GitHub notifications
 =============================
 
-GitHub notifications are a great way to stay informed about activity on repositories you care about. However, sometimes there is also abuse or spam that clutters your notifications. Especially when another crypto project is involved and you get notified about every single issue or pull request they create. While the GitHub team takes measures to prevent abuse, it can still happen and affect your inbox as notification can get stuck in your list of unread notifications.
+GitHub notifications are a great way to stay informed about activity on repositories you care about. However, sometimes there is also abuse or spam that clutters your notifications. Especially when another crypto project is involved and you get notified about every single issue or pull request they create. While the GitHub team takes measures to prevent abuse, it can still happen and affect your inbox as notifications can get stuck in your list of unread notifications.
 
-So also recently where a project started spamming issues across multiple repositories, leading to a flood of notifications for many users as shown below and the question arises how to deal with such unwanted notifications as you cannot simply mark them as read in bulk.
+This happened recently when a project started spamming issues across multiple repositories, leading to a flood of notifications for many users as shown below. The question arises: how to deal with such unwanted notifications when you cannot simply mark them as read in bulk?
 
 .. image:: deleting-github-notifications.png
     :alt: GitHub Notifications
@@ -24,7 +24,7 @@ To resolve this situation, the notifications need to be deleted. Unfortunately, 
         "id": "19089539954",
         "unread": true,
         "reason": "mention",
-        "updated_at": "2025-09-22T01:11:02Z",
+        "updated_at": "2025-10-15T12:34:56Z",
         "last_read_at": null,
         "subject": {
           "title": "Gitcoin Announcement | $15M Github & Gitcoin",
