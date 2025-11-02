@@ -10,7 +10,7 @@ Start using GitHub Dependabot
 Getting started
 ---------------
 
-Let's start simple and create file ``.github/dependabot.yml`` in the repository with the content below will tell Dependabot to scan all your GitHub workflows daily for GitHub Actions that are defined and have a newer release available. It will also create a pull request that can be merged when approved.
+Let's start simple and create a file ``.github/dependabot.yml`` in the repository with the content below. This will tell Dependabot to scan all your GitHub workflows daily for GitHub Actions that are defined and have a newer release available. It will also create a pull request that can be merged when approved.
 
 .. code-block:: yaml
     :caption: Example file :file:`.github/dependabot.yml` to scan GitHub Actions
