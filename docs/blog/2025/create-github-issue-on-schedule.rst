@@ -30,7 +30,7 @@ GitHub Actions supports different triggers and one of its triggers is called ``s
 
     jobs:
       create-issue:
-        name: Create an issues
+        name: Create an issue
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Code

@@ -64,7 +64,7 @@ There is always the exception that one repository within an organization require
     ---
 
     **Is your documentation request related to a problem? Please describe.**
-    A clear and concise description of what the problem is. Ex. The explaination is unclear for [...]
+    A clear and concise description of what the problem is. Ex. The explanation is unclear for [...]
 
 .. note::
 
@@ -73,7 +73,7 @@ There is always the exception that one repository within an organization require
 Template autonomy
 -----------------
 
-The templates must be located in the :file:`.github/ISSUE_TEMPLATE` folder and can be stored in the YAML or Markdown format, but the required keys differ between formats both formats. For the Markdown format the keys ``name:`` and ``about:`` should exist as shown in the example below.
+The templates must be located in the :file:`.github/ISSUE_TEMPLATE` folder and can be stored in the YAML or Markdown format, but the required keys differ between formats. For the Markdown format the keys ``name:`` and ``about:`` should exist as shown in the example below.
 
 .. code-block::
     :caption: Template file :file:`.github/ISSUE_TEMPLATE/bug_report.md`
@@ -109,7 +109,7 @@ Templates in the YAML format require the keys ``name:`` and ``description:`` to 
 
 Other **optional** keys that can be used to set a default value are:
 
-- ``title:`` to filling the incident
+- ``title:`` to fill in the issue title
 - ``labels:`` to add one or more labels when creating a new issue
 - ``assignees:`` to assign the new issue to one or more GitHub usernames
 
