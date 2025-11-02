@@ -73,7 +73,7 @@ There is always the exception that one repository within an organization require
 Template autonomy
 -----------------
 
-The templates must be located in the :file:`.github/ISSUE_TEMPLATE` folder and can be stored in the YAML or Markdown format, but the required keys differ between formats the formats. For the Markdown format the keys ``name:`` and ``about:`` should exist as shown in the example below.
+The templates must be located in the :file:`.github/ISSUE_TEMPLATE` folder and can be stored in the YAML or Markdown format, but the required keys differ between formats. For the Markdown format the keys ``name:`` and ``about:`` should exist as shown in the example below.
 
 .. code-block::
     :caption: Template file :file:`.github/ISSUE_TEMPLATE/bug_report.md`
