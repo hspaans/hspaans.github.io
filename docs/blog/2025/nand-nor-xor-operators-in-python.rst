@@ -5,12 +5,12 @@
 The NAND, NOR, and XOR operators in Python
 ==========================================
 
-The NAND, NOR, and XOR operators are logical operators that are not built into Python, but can be implemented using the built-in :py:obj:`not`, :py:obj:`and`, and :py:obj:`or` operators. The NAND operator returns `True` if and only if both of its operands are `False`, and the NOR operator returns `True` if and only if both of its operands are `False`. The XOR operator returns `True` if and only if exactly one of its operands is `True`.
+The NAND, NOR, and XOR operators are logical operators that are not built into Python, but can be implemented using the built-in :py:obj:`not`, :py:obj:`and`, and :py:obj:`or` operators. The NAND operator returns `True` unless both of its operands are `True` (i.e., if at least one operand is `False`), and the NOR operator returns `True` if and only if both of its operands are `False`. The XOR operator returns `True` if and only if exactly one of its operands is `True`.
 
 The NAND logic operator
 -----------------------
 
-As can be seen in the truth table below, the NAND operator returns `True` if and only of its operands are `False` this is the opposite of the `and` operator. That is because the `not` operator is applied to the result of the `and` operator which inverts the result.
+As can be seen in the truth table below, the NAND operator returns `True` unless both of its operands are `True` (i.e., if at least one operand is `False`). This is the opposite of the `and` operator. That is because the `not` operator is applied to the result of the `and` operator which inverts the result.
 
 The NAND operator can be implemented in Python as follows:
 
@@ -119,7 +119,32 @@ The XOR operator can be implemented in Python as follows:
         """
         return (a and not b) or (not a and b)
 
-If the `xor` function is called with `True` and `False` as its arguments, it will return `True` because the first part of the expression `(a and not b)` returns `True` and the second part of the expression `(not a and b)` returns `True`. This can also be directly implemented in a Python program as follows:
+.. note::
+
+    The ``xor`` function can also be implemented using the ``^`` operator as follows:
+
+    .. code-block:: python
+        :caption: The XOR logic in a Python function using the ``^`` operator
+
+        def xor(a, b):
+            """
+            Returns the XOR of two boolean values a and b.
+
+            Truth table:
+            ======= ======= ========
+            A       B       Result
+            ======= ======= ========
+            True    True    False
+            True    False   True
+            False   True    True
+            False   False   False
+            ======= ======= ========
+            """
+            return a ^ b
+
+    The ``^`` operator returns `True` if and only if exactly one of its operands is `True`.
+
+If the `xor` function is called with `True` and `False` as its arguments, it will return `True` because the first part of the expression `(a and not b)` returns `True` and the second part of the expression `(not a and b)` returns `False`. The overall result is `True` due to the `or` operation. This can also be directly implemented in a Python program as follows:
 
 .. code-block:: python
     :caption: Using the XOR logic in a Python program
@@ -135,18 +160,6 @@ If the `xor` function is called with `True` and `False` as its arguments, it wil
 
     if __name__ == "__main__":
         main()
-
-.. note::
-
-    The ``xor`` function can also be implemented using the ``^`` operator as follows:
-
-    .. code-block:: python
-        :caption: The XOR logic in a Python function using the ``^`` operator
-
-        def xor(a, b):
-            return a ^ b
-
-    The ``^`` operator returns `True` if and only if exactly one of its operands is `True`.
 
 .. note::
 
@@ -186,7 +199,7 @@ The xnor operator can be implemented in Python as follows:
         """
         return (a and b) or (not a and not b)
 
-If the `xnor` function is called with `True` and `False` as its arguments, it will return `False` because the first part of the expression `(a and b)` returns `False` and the second part of the expression `(not a and not b)` returns `True`. This can also be directly implemented in a Python program as follows:
+If the `xnor` function is called with `True` and `False` as its arguments, it will return `False` because both parts of the expression—`(a and b)` and `(not a and not b)`—return `False`. The overall result is `False` because both parts of the `or` expression are `False`. This can also be directly implemented in a Python program as follows:
 
 .. code-block:: python
     :caption: Using the XNOR logic in a Python program
@@ -203,7 +216,7 @@ If the `xnor` function is called with `True` and `False` as its arguments, it wi
     if __name__ == "__main__":
         main()
 
-.. note:
+.. note::
     
         The ``xnor`` function can also be implemented using the `==` operator as follows:
     
