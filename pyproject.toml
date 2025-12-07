@@ -22,7 +22,7 @@ dev = [
 docs = [
     "ablog",
     "myst_parser",
-    "sphinx~=8.2.0",
+    "sphinx~=9.0.4",
     "sphinx-autobuild",
     "sphinxcontrib-mermaid",
     "sphinxcontrib-googleanalytics",
