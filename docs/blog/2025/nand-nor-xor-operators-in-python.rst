@@ -178,7 +178,7 @@ The XNOR logic operator
 
 The XNOR operator returns `True` if and only if both of its operands are `True` or both of its operands are `False`. This is the opposite of the XOR operator. The truth table for the XNOR operator is as follows and it can be implemented using the `and`, `or`, and `not` operators.
 
-The xnor operator can be implemented in Python as follows:
+The XNOR operator can be implemented in Python as follows:
 
 .. code-block:: python
     :caption: The XNOR logic in a Python function
