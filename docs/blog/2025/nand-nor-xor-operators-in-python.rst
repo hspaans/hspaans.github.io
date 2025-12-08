@@ -218,7 +218,7 @@ If the `xnor` function is called with `True` and `False` as its arguments, it wi
 
 .. note::
     
-        The ``xnor`` function can also be implemented using the `==` operator as follows:
+        The ``xnor`` function can also be implemented using the ``==`` operator as follows:
     
         .. code-block:: python
             :caption: The XNOR logic in a Python function using the `==` operator
@@ -226,7 +226,7 @@ If the `xnor` function is called with `True` and `False` as its arguments, it wi
             def xnor(a, b):
                 return a == b
     
-        The `==` operator returns `True` if and only if both of its operands are equal.
+        The ``==`` operator returns `True` if and only if both of its operands are equal.
 
 Considerations about logical operators
 --------------------------------------
