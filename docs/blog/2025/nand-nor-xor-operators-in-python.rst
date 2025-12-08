@@ -5,7 +5,7 @@
 The NAND, NOR, and XOR operators in Python
 ==========================================
 
-The NAND, NOR, and XOR operators are logical operators that are not built into Python, but can be implemented using the built-in :py:obj:`not`, :py:obj:`and`, and :py:obj:`or` operators. The NAND operator returns `True` unless both of its operands are `True` (i.e., if at least one operand is `False`), and the NOR operator returns `True` if and only if both of its operands are `False`. The XOR operator returns `True` if and only if exactly one of its operands is `True`.
+The NAND, NOR, and XOR operators are logical operators that are not built into Python, but can be implemented using the built-in ``not``, ``and``, and ``or`` operators. The NAND operator returns `True` unless both of its operands are `True` (i.e., if at least one operand is `False`), and the NOR operator returns `True` if and only if both of its operands are `False`. The XOR operator returns `True` if and only if exactly one of its operands is `True`.
 
 The NAND logic operator
 -----------------------
