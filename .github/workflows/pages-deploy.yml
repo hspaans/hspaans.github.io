@@ -54,7 +54,7 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install --user -e . ablog myst_parser sphinx~=8.2.0 sphinxcontrib-mermaid sphinxcontrib-googleanalytics sphinx-copybutton sphinx-toolbox sphinx_sitemap furo
+          python -m pip install --user -e . --group dev
 
       - name: Run Sphinx build for html
         run: |
