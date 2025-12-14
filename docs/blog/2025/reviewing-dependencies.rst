@@ -90,7 +90,7 @@ Choosing the right licenses
 
 When selecting licenses for your dependencies, it's essential to consider the compatibility with your project's license and the implications of using certain licenses. Some licenses may have restrictions that could affect how you can use, modify, or distribute your project. Common open-source licenses include MIT, Apache 2.0, GPL, and BSD, each with its own set of terms and conditions. It's advisable to consult with legal experts or use tools that can help analyze license compatibility to ensure that your project remains compliant with all applicable licenses.
 
-For a comprehensive list of licenses and their details, you can refer to the `SPDX License List <//spdx.org/licenses/>`_ for standardized identifiers and information about various free/libre-source and Open Source Initiative approved licenses. It is a good practice to document the licenses of all dependencies used in your project to maintain transparency and facilitate future reviews as it evolves and will be part of :wikipedia:`SBOM (Software Bill of Materials) <SBOM>` for your project.
+For a comprehensive list of licenses and their details, you can refer to the `SPDX License List <//spdx.org/licenses/>`_ for standardized identifiers and information about various free/libre and open-source and Open Source Initiative approved licenses. It is a good practice to document the licenses of all dependencies used in your project to maintain transparency and facilitate future reviews as it evolves and will be part of :wikipedia:`SBOM (Software Bill of Materials) <SBOM>` for your project.
 
 Conclusion about reviewing dependencies
 ---------------------------------------
