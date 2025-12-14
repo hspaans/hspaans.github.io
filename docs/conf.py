@@ -1,7 +1,7 @@
 """Configuration file for the Sphinx documentation builder."""
 
-from datetime import datetime
 import os
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -133,4 +133,3 @@ if os.getenv("GITHUB_ACTIONS"):
     if "sphinxcontrib.googleanalytics" not in extensions:
         extensions.append("sphinxcontrib.googleanalytics")
     googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXX")
-

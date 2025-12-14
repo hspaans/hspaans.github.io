@@ -38,6 +38,7 @@ lint = [
     "flake8-bugbear",
     "flake8-comprehensions",
     "flake8-docstrings",
+    "flake8-github-annotations",
     "flake8-isort",
     "yamllint",
     "codespell",
@@ -76,8 +77,9 @@ commands = [
 description = "run linting on code base"
 dependency_groups = ["lint"]
 commands = [
-    ["flake8", "src"],
-    ["flake8", "tests"]
+    ["yamllint", ".", "-f", "github"],
+    ["flake8"],
+    ["pymarkdownlnt", "scan", "."],
 ]
 
 [tool.tox.env.typecheck]
