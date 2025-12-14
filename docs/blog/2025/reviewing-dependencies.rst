@@ -72,15 +72,8 @@ To set up the Dependency Review Action in your GitHub repository, you can create
             # Commonly enabled options, see https://github.com/actions/dependency-review-action#configuration-options for all available options.
             with:
               comment-summary-in-pr: always
-              allow-licenses:
-                - 'GPL-2.0-or-later'
-                - 'LGPL-2.1-or-later'
-                - 'GFDL-1.1-or-later'
-                - 'MIT'
-                - 'MPL-2.0'
-                - 'CC-BY-4.0'
-                - 'CC-BY-SA-4.0'
-                - 'Apache-2.0'
+              allow-licenses: GPL-2.0-or-later, LGPL-2.1-or-later, GFDL-1.1-or-later, MIT, MPL-2.0, CC-BY-4.0, CC-BY-SA-4.0, Apache-2.0
+
 
 .. warning::
 
