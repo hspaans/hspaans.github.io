@@ -22,13 +22,14 @@ dev = [
 docs = [
     "ablog",
     "myst_parser",
-    "sphinx~=9.0.4",
+    "sphinx~=8.2.0",
     "sphinx-autobuild",
     "sphinxcontrib-mermaid",
     "sphinxcontrib-googleanalytics",
     "sphinx-copybutton",
     "sphinx-toolbox",
     "sphinx_sitemap",
+    "sphinx_design",
     "furo",
 ]
 lint = [
