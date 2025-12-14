@@ -41,7 +41,7 @@ lint = [
     "flake8-isort",
     "yamllint",
     "codespell",
-    "pymarkdownlint",
+    "pymarkdownlnt",
 ]
 type = [
     "mypy>=1.10.0,<2.0.0",
