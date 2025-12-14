@@ -11,15 +11,14 @@ Blog Posts
 ----------
 
 .. postlist:: 10
-   :date: %b %d, %Y
+   :date: %d-%m-%Y
    :list-style: dot
-   :format: {title} - {date}
-   :excerpts:
+   :format: {date} - {title}
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    about
-   .. blog
    blog/index
+

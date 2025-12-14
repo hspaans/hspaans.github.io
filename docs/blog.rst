@@ -1,9 +1,0 @@
-==========
-Blog Posts
-==========
-
-.. postlist:: 10
-   :date: %b %d, %Y
-   :list-style: dot
-   :format: {title} - {date}
-   :excerpts:

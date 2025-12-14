@@ -22,13 +22,14 @@ dev = [
 docs = [
     "ablog",
     "myst_parser",
-    "sphinx~=9.0.4",
+    "sphinx~=8.2.0",
     "sphinx-autobuild",
     "sphinxcontrib-mermaid",
     "sphinxcontrib-googleanalytics",
     "sphinx-copybutton",
     "sphinx-toolbox",
     "sphinx_sitemap",
+    "sphinx_design",
     "furo",
 ]
 lint = [
@@ -37,10 +38,11 @@ lint = [
     "flake8-bugbear",
     "flake8-comprehensions",
     "flake8-docstrings",
+    "flake8-github-annotations",
     "flake8-isort",
     "yamllint",
     "codespell",
-    "pymarkdownlint",
+    "pymarkdownlnt",
 ]
 type = [
     "mypy>=1.10.0,<2.0.0",
@@ -75,8 +77,9 @@ commands = [
 description = "run linting on code base"
 dependency_groups = ["lint"]
 commands = [
-    ["flake8", "src"],
-    ["flake8", "tests"]
+    ["yamllint", ".", "-f", "github"],
+    ["flake8"],
+    ["pymarkdownlnt", "scan", "."],
 ]
 
 [tool.tox.env.typecheck]
