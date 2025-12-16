@@ -108,7 +108,7 @@ Now that the wiki is automatically updated, it is important to ensure that the m
             run: |
               pymarkdownlnt scan `git ls-files '*.md' ':!:*TEMPLATE/*md'`
 
-In the final step, ``pymarkdownlnt`` is used to validate all markdown files in the repository. The ``git ls-files '*.md' ':!:*TEMPLATE/*md'`` command is used to get a list of all markdown files in the repository as ``pymarkdownlnt`` doesn't scan recursively and also excludes any markdown files in the ``TEMPLATE`` directory as they're aren't conformant due to their template nature for GitHub issues and pull requests. This is then passed to ``pymarkdownlnt`` to validate the files.
+In the final step, ``pymarkdownlnt`` is used to validate all markdown files in the repository. The ``git ls-files '*.md' ':!:*TEMPLATE/*md'`` command is used to get a list of all markdown files in the repository as ``pymarkdownlnt`` doesn't scan recursively and also excludes any markdown files in the ``TEMPLATE`` directory as they aren't conformant due to their template nature for GitHub issues and pull requests. This is then passed to ``pymarkdownlnt`` to validate the files.
 
 Enable GitHub Annotations for pymarkdownlnt
 -------------------------------------------
