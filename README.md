@@ -2,7 +2,7 @@
 
 [Python Developers Guide for headers](https://devguide.python.org/documentation/markup/#sections)
 
-```
+```text
 # with overline, for parts
 * with overline, for chapters
 =, for sections
