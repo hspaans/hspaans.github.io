@@ -37,13 +37,13 @@ The first step is to create a GitHub Action that will upload the wiki. This can 
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Code
-            uses: actions/checkout@v4
+            uses: actions/checkout@v6
             with:
               repository: ${{github.repository}}
               path: ${{github.repository}}
 
           - name: Checkout Wiki
-            uses: actions/checkout@v4
+            uses: actions/checkout@v6
             with:
               repository: ${{github.repository}}.wiki
               path: ${{github.repository}}.wiki
@@ -86,7 +86,7 @@ Now that the wiki is automatically updated, it is important to ensure that the m
             uses: actions/checkout@v6
 
           - name: Set up Python
-            uses: actions/setup-python@v5
+            uses: actions/setup-python@v6
 
           - name: Install dependencies
             run: |
