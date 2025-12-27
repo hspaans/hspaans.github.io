@@ -154,4 +154,4 @@ With this workflow the GitHub Actions will automatically upload to the wiki and 
 
 .. note::
 
-    The documentation about GitHuub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :github:repo:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.
+    The documentation about GitHub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :github:repo:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.
