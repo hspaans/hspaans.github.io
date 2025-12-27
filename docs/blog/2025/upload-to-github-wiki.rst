@@ -113,7 +113,7 @@ In the final step, ``pymarkdownlnt`` is used to validate all markdown files in t
 Enable GitHub Annotations for pymarkdownlnt
 -------------------------------------------
 
-As a final step, it is useful to enable GitHub Annotations for ``pymarkdownlnt``. This will allow GitHub to display the linting errors directly in the pull request. As described in the `GitHub Annotations documentation <https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-a-problem-matcher>`_, this can be done by adding a problem matcher to the GitHub Action and then adding a problem matcher file to the repository.
+As a final step, it is useful to enable GitHub Annotations for ``pymarkdownlnt``. This will allow GitHub to display the linting errors directly in the pull request. As described in the `GitHub Annotations documentation <https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands>`_, this can be done by adding a problem matcher to the GitHub Action and then adding a problem matcher file to the repository.
 
 .. code-block:: yaml
     :caption: Example workflow file :file:`.github/workflows/lint.yml`
@@ -151,3 +151,7 @@ The following example shows the contents of the problem matcher file for ``pymar
     }
 
 With this workflow the GitHub Actions will automatically upload to the wiki and validate the markdown files. This will ensure that the wiki is always up to date and that the markdown files are valid. This can also be used to generate documentation from the repository and upload it to the wiki.
+
+.. note::
+
+    The documentation about GitHuub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :github:repo:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.

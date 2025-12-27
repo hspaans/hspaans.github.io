@@ -166,4 +166,4 @@ In the end, Dependabot helps developers to keep their dependencies up to date wi
 .. _GitHub CodeSpaces: https://github.com/features/codespaces
 .. _Semantic Versioning : https://semver.org/
 .. _VSCode: https://code.visualstudio.com/
-.. _supported ecosystems: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
+.. _supported ecosystems: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-

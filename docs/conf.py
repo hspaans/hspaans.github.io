@@ -99,6 +99,16 @@ source_suffix = {
     '.md': 'markdown',
 }
 
+linkcheck_allowed_redirects = {
+    r'https://[a-z]{2}.wikipedia.org/wiki/.*': r'https://[a-z]{2}.wikipedia.org/wiki/.*',
+}
+
+linkcheck_ignore = [
+    r'https://github.com/marketplace',
+    r'https://gemini.google.com/.*',
+    r'https://www.linkedin.com/.*',
+]
+
 if 'ablog' in extensions:
     blog_path = 'blog'
     blog_title = project
