@@ -14,12 +14,12 @@
         {
             "label": "remove development environment",
             "type": "shell",
-            "command": "sphinx-build -M clean docs build",
+            "command": "sphinx-build -M clean docs _build",
         },
         {
             "label": "run linkcheck",
             "type": "shell",
-            "command": "sphinx-build -M linkcheck docs build",
+            "command": "sphinx-build -M linkcheck docs _build",
             "dependsOn": [
                 "remove development environment"
             ],
@@ -31,7 +31,7 @@
         {
             "label": "build html",
             "type": "shell",
-            "command": "sphinx-build -M html docs build",
+            "command": "sphinx-build -M html docs _build",
             "problemMatcher": [
                 {
                     "owner": "sphinx",

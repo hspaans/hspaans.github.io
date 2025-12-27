@@ -1,12 +1,88 @@
 {
+  "Part": {
+    "prefix": ["part"],
+    "body": [
+      "####################################",
+      "${1:Part Title}",
+      "####################################"
+    ],
+    "description": "ReStructured part"
+  },
+  "Chapter": {
+    "prefix": ["chapter"],
+    "body": [
+      "*****",
+      "${1:Chapter Title}",
+      "*****"
+    ],
+    "description": "ReStructured chapter"
+  },
+  "Title": {
+    "prefix": ["title"],
+    "body": [
+      "${1:Document Title}",
+      "#####"
+    ],
+    "description": "ReStructured title"
+  },
+  "Suptitle": {
+    "prefix": ["suptitle"],
+    "body": [
+      "${1:Document Suptitle}",
+      "#####"
+    ],
+    "description": "ReStructured suptitle"
+  },
+  "Section": {
+    "prefix": ["section"],
+    "body": [
+      "${1:Section Title}",
+      "======================"
+    ],
+    "description": "ReStructured section"
+  },
+  "Subsection": {
+    "prefix": ["subsection"],
+    "body": [
+      "${1:Subsection Title}",
+      "------------------"
+    ],
+    "description": "ReStructured subsection"
+  },
+  "Subsubsection": {
+    "prefix": ["subsubsection"],
+    "body": [
+      "${1:Subsubsection Title}",
+      "^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    ],
+    "description": "ReStructured subsubsection"
+  },
+  "Paragraph": {
+    "prefix": ["paragraph"],
+    "body": [
+      "${1:Paragraph Title}",
+      "\"\"\""
+    ],
+    "description": "ReStructured paragraph"
+  },
+
   "Code-Block": {
     "prefix": ["code"],
-    "body": [".. code-block:: ${1}", "\t:caption: ${2:Example caption string}", "\t", "\t$0"],
+    "body": [
+      ".. code-block:: ${1}",
+      "\t:caption: ${2:Example caption string}",
+      "\t",
+      "\t$0"
+    ],
     "description": "ReStructured code-block"
   },
   "Post": {
     "prefix": ["post"],
-    "body": [".. post:: ${1}", "\t:tags: ${2:draft}", "\t:category: ${3:Uncategorized}"],
-    "description": "Ablog post"
+    "body": [
+      ".. post:: ${1}",
+      "\t:tags: ${2:draft}",
+      "\t:category: ${3:Uncategorized}"
+    ],
+    "description": "Blog post"
   }
 }
