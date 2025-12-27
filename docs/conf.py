@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_toolbox.github',
     'sphinx_toolbox.wikipedia',
+    'sphinxcontrib.googleanalytics',
     'sphinxcontrib.mermaid',
     'sphinx_copybutton',
     'sphinx_sitemap',
@@ -139,6 +140,4 @@ if 'sphinx_sitemap' in extensions:
     sitemap_url_scheme = "{link}"
 
 if os.getenv("GITHUB_ACTIONS"):
-    if "sphinxcontrib.googleanalytics" not in extensions:
-        extensions.append("sphinxcontrib.googleanalytics")
     googleanalytics_id = os.getenv("GOOGLE_ANALYTICS_ID", "G-XXXXX")
