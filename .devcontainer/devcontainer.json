@@ -22,7 +22,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"github.vscode-pull-request-github"
 			]
 		}
 	}
