@@ -152,6 +152,6 @@ The following example shows the contents of the problem matcher file for ``pymar
 
 With this workflow the GitHub Actions will automatically upload to the wiki and validate the markdown files. This will ensure that the wiki is always up to date and that the markdown files are valid. This can also be used to generate documentation from the repository and upload it to the wiki.
 
-.. note::
+.. update:: 2025-12-27 11:00:00
 
     The documentation about GitHub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :github:repo:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.
