@@ -1,1 +1,1 @@
-sitemap: https://hspaans.github.io/sitemap.xml
+sitemap: https://hansspaans.nl/sitemap.xml
