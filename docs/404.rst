@@ -1,5 +1,5 @@
 :orphan:
-:html_theme.sidebar_secondary.remove:
+:hide-toc:
 
 ###################
 404 Page Not Found!

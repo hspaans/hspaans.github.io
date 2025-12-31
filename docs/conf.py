@@ -121,6 +121,9 @@ if 'ablog' in extensions:
     blog_feed_language = 'en'
     blog_post_pattern = "blog/*.rst"
 
+if "notfound.extension" in extensions:
+    notfound_urls_prefix = "/"
+    
 if 'sphinx.ext.intersphinx' in extensions:
     intersphinx_mapping = {
         'ansible': ('https://docs.ansible.com/ansible/latest/', None),
