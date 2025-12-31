@@ -25,6 +25,7 @@ extensions = [
     'sphinxcontrib.mermaid',
     'sphinx_copybutton',
     'sphinx_sitemap',
+    'notfound.extension',
 ]
 
 templates_path = ['_templates']

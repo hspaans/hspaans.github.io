@@ -1,0 +1,13 @@
+:orphan:
+:html_theme.sidebar_secondary.remove:
+
+404 Page Not Found!
+==============================
+
+Perhaps you are here because:
+
+* The page has moved.
+* The page no longer exists.
+* You followed a broken link.
+* You mistyped the URL and got lost.
+* You like 404 pages.
