@@ -27,6 +27,7 @@ docs = [
     "sphinxcontrib-mermaid",
     "sphinxcontrib-googleanalytics",
     "sphinx-copybutton",
+    "sphinx-notfound-page",
     "sphinx-toolbox",
     "sphinx_sitemap",
     "sphinx_design",
