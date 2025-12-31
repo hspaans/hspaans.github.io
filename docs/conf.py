@@ -123,7 +123,7 @@ if 'ablog' in extensions:
 
 if "notfound.extension" in extensions:
     notfound_urls_prefix = "/"
-    
+
 if 'sphinx.ext.intersphinx' in extensions:
     intersphinx_mapping = {
         'ansible': ('https://docs.ansible.com/ansible/latest/', None),
