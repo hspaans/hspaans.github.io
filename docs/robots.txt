@@ -1,1 +1,1 @@
-sitemap: https://hansspaans.nl/sitemap.xml
+sitemap: https://hansspaans.com/sitemap.xml
