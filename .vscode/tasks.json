@@ -6,7 +6,7 @@
         {
             "label": "run webserver",
             "type": "shell",
-            "command": "sphinx-autobuild --port 8000 docs/ build/",
+            "command": "sphinx-autobuild --port 8000 docs/ _build/",
             "dependsOn": [
                 "remove development environment"
             ]
