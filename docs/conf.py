@@ -34,7 +34,7 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_baseurl = 'https://hansspaans.nl/'
+html_baseurl = 'https://hansspaans.com/'
 html_title = project
 html_theme = 'furo'
 html_static_path = ['_static']
@@ -71,7 +71,7 @@ elif html_theme == "furo":
         "footer_icons": [
             {
                 "name": "RSS",
-                "url": "https://hansspaans.nl/blog/atom.xml",
+                "url": "https://hansspaans.com/blog/atom.xml",
                 "html": "",
                 "class": "fas fa-rss",
             },
