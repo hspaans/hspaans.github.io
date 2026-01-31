@@ -3,7 +3,7 @@ About me
 
 I'm a :abbr:`staff engineer (A Staff engineer is a senior, individual contributor role in a Software Engineering organization. There is no “one” kind of Staff engineer, and many fall into one of four archetypes: Tech Lead, Architect, Solver, and Right Hand.)` with a passion for open-source projects, productivity, and technology. This website is a space where I share my projects, blog posts, and insights on various topics related to software development, DevOps, and technology trends. It may include tutorials, how-tos, and personal experiences in the tech world, or something from the past.
 
-I live in the Netherlands and particular in `Holland <https://youtu.be/eE_IUPInEuc>`_ near the coast on the border of our governmental city The Hague. It gives me the opportunity to enjoy both the vibrant city life and the tranquility of the seaside. Spending time on friends and family, enjoying podcasts, reading books, and exploring the outdoors are some of my favorite pastimes.
+I live in the Netherlands and particular in `Holland <https://youtu.be/eE_IUPInEuc>`_ near the coast on the border of our governmental city The Hague. It gives me the opportunity to enjoy both the vibrant city life and the tranquility of the seaside. Spending time with friends and family, enjoying podcasts, reading books, and exploring the outdoors are some of my favorite pastimes.
 
 My journey
 ==========
