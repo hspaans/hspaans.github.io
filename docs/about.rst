@@ -10,7 +10,7 @@ My journey
 
 I started my journey in technology a long time ago, driven by curiosity and a desire to understand how things work. The original start was in :wikipedia:`electronic engineer`, but quickly shifted to programming :wikipedia:`PLCs <Programmable logic controller>` and embedded systems. Over time, this passion evolved into a career in :wikipedia:`software engineering`. A starting point was learning various programming languages and frameworks, which laid the foundation for my understanding of software development and systems architecture. And completing my studies in computer science further solidified my knowledge and skills.
 
-This was the beginning of a journey that has taken me through various roles and industries. And somehow it always revolved around technology and software development and specially introducing new tools and automating processes to improve efficiency and effectiveness, or to scale out solutions. Being able to act as solution architect, developer, and operations engineer has given me a holistic view of the software development lifecycle and the importance of collaboration between different teams.
+This was the beginning of a journey that has taken me through various roles and industries. And somehow it always revolved around technology and software development and especially introducing new tools and automating processes to improve efficiency and effectiveness, or to scale out solutions. Being able to act as solution architect, developer, and operations engineer has given me a holistic view of the software development lifecycle and the importance of collaboration between different teams.
 
 The learnings
 =============
