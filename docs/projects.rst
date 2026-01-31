@@ -1,7 +1,7 @@
 Projects
 ########
 
-Here are some of my `repositories <https://github.com/hspaans?tab=repositories>`_ hosted on GitHub that people seem as interesting or useful.
+Here are some of my `repositories <https://github.com/hspaans?tab=repositories>`_ hosted on GitHub that people see as interesting or useful.
 
 Active or maintained projects
 =============================
