@@ -15,7 +15,7 @@ This was the beginning of a journey that has taken me through various roles and 
 The learnings
 =============
 
-Over the years, I've learned the importance of collaboration, continuous learning, and adaptability in the ever-evolving tech landscape. Sharing knowledge through blogging and open-source contributions has been a rewarding experience that has helped me grow both personally and professionally. And maybe most important thing is to stay curious and open to new ideas, as technology is constantly changing, and staying updated is crucial for success in this field, but also to walk the extra mile and help others to grow as not everyone has the same opportunities or possibilities.
+Over the years, I've learned the importance of collaboration, continuous learning, and adaptability in the ever-evolving tech landscape. Sharing knowledge through blogging and open-source contributions has been a rewarding experience that has helped me grow both personally and professionally. And maybe the most important thing is to stay curious and open to new ideas, as technology is constantly changing, and staying updated is crucial for success in this field, but also to walk the extra mile and help others to grow as not everyone has the same opportunities or possibilities.
 
 A possible future
 =================
