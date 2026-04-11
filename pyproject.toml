@@ -14,7 +14,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "tox>=4.27.0,<5.0.0",
+    "tox>=4.52.1,<5.0.0",
     {include-group = "docs"},
     {include-group = "lint"},
     {include-group = "type"},
@@ -22,7 +22,7 @@ dev = [
 docs = [
     "ablog",
     "myst_parser",
-    "sphinx~=8.2.0",
+    "sphinx~=9.0.4",
     "sphinx-autobuild",
     "sphinxcontrib-mermaid",
     "sphinxcontrib-googleanalytics",
@@ -46,11 +46,11 @@ lint = [
     "pymarkdownlnt",
 ]
 type = [
-    "mypy>=1.10.0,<2.0.0",
+    "mypy>=1.20.0,<2.0.0",
 ]
 
 [tool.tox]
-requires = ["tox>=4.27.0,<5.0.0"]
+requires = ["tox>=4.52.1,<5.0.0"]
 env_list = ["docs"]
 
 description = "Run test under {base_python}"
