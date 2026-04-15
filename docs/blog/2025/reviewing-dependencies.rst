@@ -26,7 +26,7 @@ This review process should be an integral part of your development workflow as i
 Reviewing licenses with GitHub Actions
 --------------------------------------
 
-Reviewing licenses of dependencies can be a daunting task, especially for large projects with numerous dependencies. Fortunately, GitHub Actions provides a way to automate this process using the :github:repo:`Dependency Review Action <actions/dependency-review-action>`. This action scans the dependency manifest files that change as part of a Pull Request (PR) and surfaces known-vulnerable versions of the packages declared or updated in the PR. By integrating this action into your CI/CD pipeline, you can ensure that any PR introducing known-vulnerable packages will be blocked from merging.
+Reviewing licenses of dependencies can be a daunting task, especially for large projects with numerous dependencies. Fortunately, GitHub Actions provides a way to automate this process using the :gh:`Dependency Review Action <actions/dependency-review-action>`. This action scans the dependency manifest files that change as part of a Pull Request (PR) and surfaces known-vulnerable versions of the packages declared or updated in the PR. By integrating this action into your CI/CD pipeline, you can ensure that any PR introducing known-vulnerable packages will be blocked from merging.
 
 To set up the Dependency Review Action in your GitHub repository, you can create a workflow file in the `.github/workflows` directory of your repository. Below is an example of a GitHub Actions workflow that utilizes the Dependency Review Action:
 
@@ -90,7 +90,7 @@ Choosing the right licenses
 
 When selecting licenses for your dependencies, it's essential to consider the compatibility with your project's license and the implications of using certain licenses. Some licenses may have restrictions that could affect how you can use, modify, or distribute your project. Common open-source licenses include MIT, Apache 2.0, GPL, and BSD, each with its own set of terms and conditions. It's advisable to consult with legal experts or use tools that can help analyze license compatibility to ensure that your project remains compliant with all applicable licenses.
 
-For a comprehensive list of licenses and their details, you can refer to the `SPDX License List <//spdx.org/licenses/>`_ for standardized identifiers and information about various free/libre and open-source and Open Source Initiative approved licenses. It is a good practice to document the licenses of all dependencies used in your project to maintain transparency and facilitate future reviews as it evolves and will be part of :wikipedia:`SBOM (Software Bill of Materials) <SBOM>` for your project.
+For a comprehensive list of licenses and their details, you can refer to the `SPDX License List <//spdx.org/licenses/>`_ for standardized identifiers and information about various free/libre and open-source and Open Source Initiative approved licenses. It is a good practice to document the licenses of all dependencies used in your project to maintain transparency and facilitate future reviews as it evolves and will be part of :wiki:`SBOM (Software Bill of Materials) <SBOM>` for your project.
 
 Conclusion about reviewing dependencies
 ---------------------------------------

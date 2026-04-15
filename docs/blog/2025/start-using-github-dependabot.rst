@@ -5,7 +5,7 @@
 Start using GitHub Dependabot
 =============================
 
-`GitHub`_ bought a service called :github:org:`Dependabot <dependabot>` a while back and is now integrating this service as a GitHub Application into the ecosystem. This allows GitHub users to automatically do dependency management and get alerted when a security-related update has been found. For a while this service was in beta but it is now enabled for all public repositories and can be enabled for private repositories as well.
+`GitHub`_ bought a service called :gh:`Dependabot <dependabot>` a while back and is now integrating this service as a GitHub Application into the ecosystem. This allows GitHub users to automatically do dependency management and get alerted when a security-related update has been found. For a while this service was in beta but it is now enabled for all public repositories and can be enabled for private repositories as well.
 
 Getting started
 ---------------

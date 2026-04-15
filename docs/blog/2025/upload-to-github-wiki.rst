@@ -63,7 +63,7 @@ The ``concurrency`` section is used to ensure that only one instance of the GitH
 Validate markdown files with pymarkdownlnt
 ------------------------------------------
 
-Now that the wiki is automatically updated, it is important to ensure that the markdown files are valid. This can be done using :github:repo:`pymarkdownlnt <jackdewinter/pymarkdown>`. The following example shows how to use GitHub Actions to validate markdown files in the repository.
+Now that the wiki is automatically updated, it is important to ensure that the markdown files are valid. This can be done using :gh:`pymarkdownlnt <jackdewinter/pymarkdown>`. The following example shows how to use GitHub Actions to validate markdown files in the repository.
 
 .. code-block:: yaml
     :caption: Example workflow file :file:`.github/workflows/lint.yml`
@@ -154,4 +154,4 @@ With this workflow the GitHub Actions will automatically upload to the wiki and 
 
 .. update:: 2025-12-27 11:00:00
 
-    The documentation about GitHub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :github:repo:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.
+    The documentation about GitHub Annotations has been recently updated. The `documentation <https://github.com/actions/toolkit/blob/main/docs/problem-matchers.md>`_ about :gh:`actions/toolkit <actions/toolkit>` still contains the format for problem matchers and can be used as a reference.

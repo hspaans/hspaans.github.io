@@ -14,16 +14,16 @@ The Rise and Fall of Perl
 
 Perl was once hailed as the "duct tape of the internet," thanks to its flexibility and powerful text-processing capabilities. It was widely used for CGI scripting, system administration, and even web application development. However, with the advent of newer languages like Python, Ruby, and JavaScript, Perl's popularity has waned. These newer languages offer more modern syntax, better libraries, and a more active community, making them more appealing to developers.
 
-Especially with the rise of web frameworks like :wikipedia:`Django <Django (web framework)>` (:wikipedia:`Python <Python (programming language)>`), :wikipedia:`Ruby on Rails` (:wikipedia:`Ruby <Ruby (programming language)>`), and :wikipedia:`Node.js` (:wikipedia:`JavaScript`), developers found more efficient ways to build web applications. Maybe also the :wikipedia:`PHP` ecosystem with frameworks like Laravel and Symfony played a role in this shift as it was easier to learn for many web developers and manage than `mod_perl <https://perl.apache.org/>`_ or CGI scripts.
+Especially with the rise of web frameworks like :wiki:`Django <Django (web framework)>` (:wiki:`Python <Python (programming language)>`), :wiki:`Ruby on Rails` (:wiki:`Ruby <Ruby (programming language)>`), and :wiki:`Node.js` (:wiki:`JavaScript`), developers found more efficient ways to build web applications. Maybe also the :wiki:`PHP` ecosystem with frameworks like Laravel and Symfony played a role in this shift as it was easier to learn for many web developers and manage than `mod_perl <https://perl.apache.org/>`_ or CGI scripts.
 
 The future of Perl looks uncertain as Perl 6 was `announced in 2000 <https://www.nntp.perl.org/group/perl.perl6.meta/2000/10/msg424.html>`_ and later rebranded to Raku and has not seen widespread adoption. In 2020, Perl 7 was announced, aiming to modernize the language and make it more accessible to new developers. In 2021, this plan was slightly adjusted to keep Perl 5 in long-term maintenance mode with only important security and bug fixes coming to it. However, the impact of Perl 7 remains to be seen as it will `only be released when enough features are ready and stable <https://blogs.perl.org/users/psc/2022/05/what-happened-to-perl-7.html>`_.
 
 The Current Landscape
 ---------------------
 
-As we assess the future of Perl, it's essential to consider the current landscape of software development. Many organizations are adopting microservices architectures, containerization, and :wikipedia:`cloud-native` technologies. These trends emphasize the need for modular, maintainable code that can evolve independently.
+As we assess the future of Perl, it's essential to consider the current landscape of software development. Many organizations are adopting microservices architectures, containerization, and :wiki:`cloud-native` technologies. These trends emphasize the need for modular, maintainable code that can evolve independently.
 
-In this context, the case for containing Perl code becomes more compelling. By isolating Perl components, we can better manage their lifecycle and reduce the impact of their limitations on the overall system. And the rise of :wikipedia:`DevOps` practices and :wikipedia:`CI/CD` pipelines also emphasizes the need for maintainable and testable code, which can be challenging with legacy Perl codebases.
+In this context, the case for containing Perl code becomes more compelling. By isolating Perl components, we can better manage their lifecycle and reduce the impact of their limitations on the overall system. And the rise of :wiki:`DevOps` practices and :wiki:`CI/CD` pipelines also emphasizes the need for maintainable and testable code, which can be challenging with legacy Perl codebases.
 
 Here are some key considerations for containing Perl in modern software development:
 
@@ -33,7 +33,7 @@ Here are some key considerations for containing Perl in modern software developm
 4. **Documentation**: Improve documentation for Perl codebases to make them more accessible to new developers. This can help mitigate the challenges posed by a shrinking talent pool.
 5. **Hiring and Training**: Consider the availability of skilled Perl developers when planning projects. Investing in training for existing team members can help bridge the gap.
 
-While most of these considerations are technology driven, the final one about :wikipedia:`recruitment` and training is more business driven. The availability of skilled Perl developers is decreasing as newer generations of developers are less likely to learn Perl. This can lead to challenges in maintaining and extending Perl codebases, making it essential for organizations to consider the long-term implications of their technology choices.
+While most of these considerations are technology driven, the final one about :wiki:`recruitment` and training is more business driven. The availability of skilled Perl developers is decreasing as newer generations of developers are less likely to learn Perl. This can lead to challenges in maintaining and extending Perl codebases, making it essential for organizations to consider the long-term implications of their technology choices.
 
 The Challenges of Perl
 ----------------------
@@ -55,7 +55,7 @@ In light of these challenges, containing Perl code within specific modules or se
 
 1. **Maintainability**: As projects grow and evolve, maintaining code written in Perl can become challenging, especially if the original developers are no longer available. Containing Perl code within specific modules or services can help isolate it from the rest of the codebase, making it easier to manage.
 2. **Interoperability**: By containing Perl code, we can create clear interfaces between different parts of the system. This allows for easier integration with other languages and technologies, facilitating a more modular architecture.
-3. **Legacy Systems**: Many organizations still rely on :wikipedia:`legacy systems` built with Perl. Containing these systems can help ensure they continue to function while allowing for gradual migration to more modern technologies.
+3. **Legacy Systems**: Many organizations still rely on :wiki:`legacy systems` built with Perl. Containing these systems can help ensure they continue to function while allowing for gradual migration to more modern technologies.
 4. **Security**: Containing Perl code can also help mitigate security risks associated with outdated libraries and dependencies. By isolating Perl components, we can better manage updates and patches.
 5. **Team Dynamics**: As development teams evolve, the skill sets of team members may change. Containing Perl code can help ensure that new team members can work effectively without needing to learn an older language.
 
@@ -66,7 +66,7 @@ Challenges of Containment
 
 Managing and containing Perl code is not without its challenges like any legacy technology. Some of the key challenges include:
 
-1. **Technical Debt**: Containing Perl code may not eliminate the :wikipedia:`technical debt` associated with it. Legacy code can still be difficult to work with, and simply isolating it may not address underlying issues.
+1. **Technical Debt**: Containing Perl code may not eliminate the :wiki:`technical debt` associated with it. Legacy code can still be difficult to work with, and simply isolating it may not address underlying issues.
 2. **Integration Complexity**: As we contain Perl code, we must also consider how it will interact with other parts of the system. This can introduce additional complexity and potential points of failure.
 3. **Resource Allocation**: Containing Perl code may require dedicated resources for maintenance and support. Organizations must weigh the costs and benefits of this approach.
 
@@ -83,7 +83,7 @@ While the trend is to move away from Perl, there are still valid reasons for kee
 4. **Niche Applications**: In certain domains, such as bioinformatics and text processing, Perl remains a popular choice due to its powerful capabilities. Keeping Perl code in these niche areas can be beneficial.
 5. **Legacy Systems**: Many organizations have significant investments in Perl codebases that would be costly and time-consuming to replace. In such cases, it may be more practical to maintain and contain the existing Perl code rather than attempting a complete rewrite.
 
-In some cases, the cost and effort required to migrate away from Perl may outweigh the benefits. Organizations must carefully evaluate their specific circumstances and make informed decisions about whether to keep or contain Perl code. If the Perl code is stable, well-maintained, and continues to meet the needs of the organization, there may be little incentive to replace it if the risks and costs are too high. We see the same with :wikipedia:`COBOL` in many financial institutions and mainframe systems that are still in use today where the costs to run today are lower than a complete rewrite or migration.
+In some cases, the cost and effort required to migrate away from Perl may outweigh the benefits. Organizations must carefully evaluate their specific circumstances and make informed decisions about whether to keep or contain Perl code. If the Perl code is stable, well-maintained, and continues to meet the needs of the organization, there may be little incentive to replace it if the risks and costs are too high. We see the same with :wiki:`COBOL` in many financial institutions and mainframe systems that are still in use today where the costs to run today are lower than a complete rewrite or migration.
 
 Conclusion about containing Perl
 --------------------------------

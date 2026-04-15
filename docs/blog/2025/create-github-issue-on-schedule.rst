@@ -12,7 +12,7 @@ Like in post :ref:`Start using GitHub Dependabot` where merge requests were auto
 GitHub Actions on a schedule
 ----------------------------
 
-GitHub Actions supports different triggers and one of its triggers is called ``schedule`` which allows starting a workflow at a specific time. In the example below we start the workflow every first day of the month at 8 AM sharp. The syntax to specify the time follows the implementation of :wikipedia:`cron <Cron>` in :wikipedia:`Linux`.
+GitHub Actions supports different triggers and one of its triggers is called ``schedule`` which allows starting a workflow at a specific time. In the example below we start the workflow every first day of the month at 8 AM sharp. The syntax to specify the time follows the implementation of :wiki:`cron <Cron>` in :wiki:`Linux`.
 
 .. code-block:: yaml
     :caption: Example workflow file :file:`.github/workflows/patch-reminder.yml`
@@ -44,16 +44,16 @@ GitHub Actions supports different triggers and one of its triggers is called ``s
               update_existing: false
               filename: .github/patch-issue-template.md
 
-The job to create an issue relies on a third-party action called :github:repo:`JasonEtco/create-an-issue` that needs write permissions to create or update issues. This GitHub Action can update existing issues, but also create new ones. In our example pipeline we create a new issue every month and are using file :file:`.github/patch-issue-template.md` as a template for this.
+The job to create an issue relies on a third-party action called :gh:`JasonEtco/create-an-issue` that needs write permissions to create or update issues. This GitHub Action can update existing issues, but also create new ones. In our example pipeline we create a new issue every month and are using file :file:`.github/patch-issue-template.md` as a template for this.
 
 .. warning::
 
-    The :wikipedia:`cron <Cron>` implementation used by :github:org:`GitHub Actions<actions>` doesn't support extensions like ``@daily`` or ``@weekly`` for example.
+    The :wiki:`cron <Cron>` implementation used by :gh:`GitHub Actions <actions>` doesn't support extensions like ``@daily`` or ``@weekly`` for example.
 
 Template autonomy for create-an-issue
 -------------------------------------
 
-GitHub Action :github:repo:`JasonEtco/create-an-issue` takes a template file and supports some basic Jinja2 filters that are applied when an issue is created. This way a unique issue is generated every month and supports similar keys as in post :ref:`Custom GitHub templates for issues` to directly assign the issue and to apply labels.
+GitHub Action :gh:`JasonEtco/create-an-issue` takes a template file and supports some basic Jinja2 filters that are applied when an issue is created. This way a unique issue is generated every month and supports similar keys as in post :ref:`Custom GitHub templates for issues` to directly assign the issue and to apply labels.
 
 .. code-block:: markdown
     :caption: Example template :file:`.github/patch-issue-template.md`
