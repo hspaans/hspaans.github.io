@@ -20,8 +20,6 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
-    'sphinx_toolbox.github',
-    'sphinx_toolbox.wikipedia',
     'sphinxcontrib.mermaid',
     'sphinx_copybutton',
     'sphinx_sitemap',
@@ -131,12 +129,11 @@ if 'sphinx.ext.intersphinx' in extensions:
         'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
     }
 
-if 'sphinx_toolbox.github' in extensions:
-    github_username = 'hspaans'
-    github_repository = 'hspaans.github.io'
-
-if 'sphinx_toolbox.wikipedia' in extensions:
-    wikipedia_lang = 'en'
+if 'sphinx.ext.extlinks' in extensions:
+    extlinks = {
+        'gh': ('https://github.com/%s', '%s'),
+        'wiki': ('https://en.wikipedia.org/wiki/%s', '%s'),
+    }
 
 if 'sphinx_sitemap' in extensions:
     sitemap_locales = [None]

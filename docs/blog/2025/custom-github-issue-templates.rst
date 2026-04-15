@@ -113,10 +113,10 @@ Other **optional** keys that can be used to set a default value are:
 - ``labels:`` to add one or more labels when creating a new issue
 - ``assignees:`` to assign the new issue to one or more GitHub usernames
 
-With this most areas are covered about templates for issues, and more :github:repo:`example templates<stevemao/github-issue-templates>` can be found on GitHub to see what other projects are using.
+With this most areas are covered about templates for issues, and more :gh:`example templates <stevemao/github-issue-templates>` can be found on GitHub to see what other projects are using.
 
 .. note::
 
-    Templates are parsed as a :wikipedia:`YAML` file and will follow the structure including that colon is the separator between variable and value. Any values containing a colon must be surrounded with quotes like ``title: "bug: [short description]"``
+    Templates are parsed as a :wiki:`YAML` file and will follow the structure including that colon is the separator between variable and value. Any values containing a colon must be surrounded with quotes like ``title: "bug: [short description]"``
 
 .. _GitHub: https://github.com

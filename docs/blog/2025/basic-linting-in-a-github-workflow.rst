@@ -49,7 +49,7 @@ Now the workflow file is in place it can run but it needs to be configured to ac
 Validate yaml files
 ###################
 
-The easiest linter is :github:repo:`yamllint <adrienverge/yamllint>` that validates YAML files and can be used to validate the GitHub workflow files themselves. This is useful as it can catch syntax errors and other issues before they cause problems in the workflow. First we will run the yamllint command on our own local machine to see what issues it finds so we know what to expect when we run it in the workflow.
+The easiest linter is :gh:`yamllint <adrienverge/yamllint>` that validates YAML files and can be used to validate the GitHub workflow files themselves. This is useful as it can catch syntax errors and other issues before they cause problems in the workflow. First we will run the yamllint command on our own local machine to see what issues it finds so we know what to expect when we run it in the workflow.
 
 .. code-block:: console
     :caption: Linting yaml files on the commandline
@@ -116,7 +116,7 @@ The final step is to make sure that the `.yamllint.yml` configuration file is in
 Validate Markdown files
 #######################
 
-The second linter is :github:repo:`pymarkdownlnt <jackdewinter/pymarkdown>` that validates Markdown files. This linter is useful as it can catch a wide range of issues in Markdown files, including formatting issues, broken links, and other common problems. As with yamllint we will first run the command on our own local machine to see what issues it finds. Here we will directly go for all files tracked by git with the `git ls-files` command.
+The second linter is :gh:`pymarkdownlnt <jackdewinter/pymarkdown>` that validates Markdown files. This linter is useful as it can catch a wide range of issues in Markdown files, including formatting issues, broken links, and other common problems. As with yamllint we will first run the command on our own local machine to see what issues it finds. Here we will directly go for all files tracked by git with the `git ls-files` command.
 
 .. code-block:: console
     :caption: Linting Markdown files on the commandline
@@ -175,4 +175,4 @@ Similar to with yamllint we also need to make sure that the configuration file f
 Conclusion if linting is useful
 ###############################
 
-For some linting is crucial and for others it is just nice to have. The better question is not whether to lint, but how to lint effectively as the two linters described here are just the beginning. And we may even argue about the best practices for configuring and using these tools to maximize their effectiveness that a using them directly in the workflow is the best approach as it affects the repository, but others like :github:repo:`flake8 <PyCQA/flake8>` or :github:repo:`black <psf/black>` can be used in a local development environment as well as part of :github:repo:`tox <tox-dev/tox>` or :github:repo:`pre-commit <pre-commit/pre-commit>`.
+For some linting is crucial and for others it is just nice to have. The better question is not whether to lint, but how to lint effectively as the two linters described here are just the beginning. And we may even argue about the best practices for configuring and using these tools to maximize their effectiveness that a using them directly in the workflow is the best approach as it affects the repository, but others like :gh:`flake8 <PyCQA/flake8>` or :gh:`black <psf/black>` can be used in a local development environment as well as part of :gh:`tox <tox-dev/tox>` or :gh:`pre-commit <pre-commit/pre-commit>`.
