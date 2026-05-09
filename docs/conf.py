@@ -132,6 +132,7 @@ if 'sphinx.ext.intersphinx' in extensions:
 if 'sphinx.ext.extlinks' in extensions:
     extlinks = {
         'gh': ('https://github.com/%s', '%s'),
+        'grokipedia': ('https://grokipedia.com/page/%s', '%s'),
         'wiki': ('https://en.wikipedia.org/wiki/%s', '%s'),
     }
 
