@@ -45,7 +45,7 @@ lint = [
     "pymarkdownlnt",
 ]
 type = [
-    "mypy>=1.10.0,<2.0.0",
+    "mypy>=1.10.0,<3.0.0",
 ]
 
 [tool.tox]
