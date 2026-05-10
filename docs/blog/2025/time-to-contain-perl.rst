@@ -21,7 +21,7 @@ The future of Perl looks uncertain as Perl 6 was `announced in 2000 <https://www
 The Current Landscape
 ---------------------
 
-As we assess the future of Perl, it's essential to consider the current landscape of software development. Many organizations are adopting microservices architectures, containerization, and :gp:`cloud-native computing <Cloud-native computing>`. These trends emphasize the need for modular, maintainable code that can evolve independently.
+As we assess the future of Perl, it's essential to consider the current landscape of software development. Many organizations are adopting microservices architectures, containerization, and :gp:`cloud-native computing <Cloud-native_computing>`. These trends emphasize the need for modular, maintainable code that can evolve independently.
 
 In this context, the case for containing Perl code becomes more compelling. By isolating Perl components, we can better manage their lifecycle and reduce the impact of their limitations on the overall system. And the rise of :gp:`DevOps` practices and :gp:`CI/CD <CI%2FCD>` pipelines also emphasizes the need for maintainable and testable code, which can be challenging with legacy Perl codebases.
 

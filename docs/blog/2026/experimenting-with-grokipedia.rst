@@ -20,7 +20,7 @@ As we already had a working codebase, we could use it to generate the prompt to 
 2. Create a mapping of Wikipedia links to their corresponding Grokipedia links.
 3. Use the mapping to replace Wikipedia links with Grokipedia links in the documentation.
 
-This resulted in an GitHub issue with the following content:
+This resulted in a GitHub issue with the following content:
 
 .. code-block:: text
 
@@ -49,7 +49,7 @@ Which changes were made
 
 The changes made were primarily in the documentation, where we updated the links to point to Grokipedia instead of Wikipedia. This involved modifying the extlinks configuration in Sphinx to include the Grokipedia URL and then updating the documentation files to replace the Wikipedia links with their corresponding Grokipedia links.
 
-Also `conf.py` was updated to include the new extlink for Grokipedia and to allow redirects for the linkcheck option to handle the new links correctly.
+Also ``conf.py`` was updated to include the new extlink for Grokipedia and to allow redirects for the linkcheck option to handle the new links correctly.
 
 .. code-block:: python
     
