@@ -12,7 +12,7 @@ Like in post :ref:`Start using GitHub Dependabot` where merge requests were auto
 GitHub Actions on a schedule
 ----------------------------
 
-GitHub Actions supports different triggers and one of its triggers is called ``schedule`` which allows starting a workflow at a specific time. In the example below we start the workflow every first day of the month at 8 AM sharp. The syntax to specify the time follows the implementation of :grokipedia:`cron <Cron>` in :grokipedia:`Linux`.
+GitHub Actions supports different triggers and one of its triggers is called ``schedule`` which allows starting a workflow at a specific time. In the example below we start the workflow every first day of the month at 8 AM sharp. The syntax to specify the time follows the implementation of :gp:`cron <Cron>` in :gp:`Linux`.
 
 .. code-block:: yaml
     :caption: Example workflow file :file:`.github/workflows/patch-reminder.yml`
@@ -48,7 +48,7 @@ The job to create an issue relies on a third-party action called :gh:`JasonEtco/
 
 .. warning::
 
-    The :grokipedia:`cron <Cron>` implementation used by :gh:`GitHub Actions <actions>` doesn't support extensions like ``@daily`` or ``@weekly`` for example.
+    The :gp:`cron <Cron>` implementation used by :gh:`GitHub Actions <actions>` doesn't support extensions like ``@daily`` or ``@weekly`` for example.
 
 Template autonomy for create-an-issue
 -------------------------------------

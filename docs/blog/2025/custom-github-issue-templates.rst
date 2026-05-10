@@ -117,6 +117,6 @@ With this most areas are covered about templates for issues, and more :gh:`examp
 
 .. note::
 
-    Templates are parsed as a :grokipedia:`YAML` file and will follow the structure including that colon is the separator between variable and value. Any values containing a colon must be surrounded with quotes like ``title: "bug: [short description]"``
+    Templates are parsed as a :gp:`YAML` file and will follow the structure including that colon is the separator between variable and value. Any values containing a colon must be surrounded with quotes like ``title: "bug: [short description]"``
 
 .. _GitHub: https://github.com

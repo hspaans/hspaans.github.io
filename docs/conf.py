@@ -99,7 +99,10 @@ source_suffix = {
 }
 
 linkcheck_allowed_redirects = {
+    r'https://docs.github.com/[a-z]{2}/.*': r'https://docs.github.com/[a-z]{2}/.*',
+    r'https://grokipedia.com/page/.*': r'https://grokipedia.com/page/.*',
     r'https://[a-z]{2}.wikipedia.org/wiki/.*': r'https://[a-z]{2}.wikipedia.org/wiki/.*',
+    r'https://youtu.be/.*': r'https://www.youtube.com/watch\?v=.*',
 }
 
 linkcheck_ignore = [
@@ -132,8 +135,9 @@ if 'sphinx.ext.intersphinx' in extensions:
 if 'sphinx.ext.extlinks' in extensions:
     extlinks = {
         'gh': ('https://github.com/%s', '%s'),
-        'grokipedia': ('https://grokipedia.com/page/%s', '%s'),
+        'gp': ('https://grokipedia.com/page/%s', '%s'),
         'wiki': ('https://en.wikipedia.org/wiki/%s', '%s'),
+        'yt': ('https://www.youtube.com/watch?v=%s', '%s'),
     }
 
 if 'sphinx_sitemap' in extensions:
