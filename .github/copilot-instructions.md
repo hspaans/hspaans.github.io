@@ -5,7 +5,7 @@ This is a personal blog and portfolio site built with **Sphinx** and hosted on G
 
 ## Key Structure
 - `docs/` — Sphinx source files, blog content (organized by year in `docs/blog/2025/`, `docs/blog/2026/`, etc.)
-- `_build/` — Built HTML output (generated; do not edit)
+- `_build/` — Generated build output; HTML is written under `_build/html` (do not edit)
 - `src/` — Python package code (if present)
 - `tests/` — Test files (if present)
 - `.github/workflows/` — CI/CD: CodeQL, dependency review, Pages deployment
@@ -13,7 +13,7 @@ This is a personal blog and portfolio site built with **Sphinx** and hosted on G
 ## Build & Run
 - **Build HTML**: `sphinx-build -M html docs _build`
 - **Clean build**: `sphinx-build -M clean docs _build`
-- **Dev server**: `sphinx-autobuild --port 8000 docs/ _build/` (auto-rebuilds on file changes)
+- **Dev server**: `sphinx-autobuild --port 8000 docs/ _build/html` (auto-rebuilds on file changes)
 - **Link check**: `sphinx-build -M linkcheck docs _build`
 
 ## Project Conventions
@@ -27,5 +27,5 @@ This is a personal blog and portfolio site built with **Sphinx** and hosted on G
 ## When You Help
 - If asked to add a new blog post, create it under `docs/blog/YYYY/` with proper .rst structure
 - If asked to edit docs, rebuild with `sphinx-build -M html docs _build` and test with the dev server
-- Link checks are automated in CI; prefer fixing broken references rather than ignoring them
+- Link checks can be run locally with `sphinx-build -M linkcheck docs _build`; prefer fixing broken references rather than ignoring them
 - Keep Python dependencies minimal and documented in `pyproject.toml`
