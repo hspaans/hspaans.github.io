@@ -6,8 +6,8 @@ This is a personal blog and portfolio site built with **Sphinx** and hosted on G
 ## Key Structure
 - `docs/` — Sphinx source files, blog content (organized by year in `docs/blog/2025/`, `docs/blog/2026/`, etc.)
 - `_build/` — Built HTML output (generated; do not edit)
-- `src/` — Python package code (if any)
-- `tests/` — Test files
+- `src/` — Python package code (if present)
+- `tests/` — Test files (if present)
 - `.github/workflows/` — CI/CD: CodeQL, dependency review, Pages deployment
 
 ## Build & Run
