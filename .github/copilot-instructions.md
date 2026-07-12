@@ -18,7 +18,7 @@ This is a personal blog and portfolio site built with **Sphinx** and hosted on G
 
 ## Project Conventions
 - Blog posts use **ReStructuredText** format (.rst)
-- All blog metadata (title, author, date, category, tags) goes in the post's .rst file header/directives
+- Blog metadata (date, category, tags) goes in the post's `.. post::` directive and its options (the title is the top-level heading; author is configured globally in `docs/conf.py`)
 - Posts are final once in `docs/blog/YYYY/` — avoid rewriting published content
 - URLs are derived from filenames; use hyphens not underscores (`fluent-interface.rst` not `fluent_interface.rst`)
 - Configuration is in `docs/conf.py` (Sphinx settings)
