@@ -27,7 +27,13 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = [
+    ".devcontainer/*"
+    ".github/*",
+    "github_submodule/*",
+    "LICENSE.md",
+    "README.md",
+]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
