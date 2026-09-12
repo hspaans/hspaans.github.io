@@ -23,8 +23,8 @@ updates:
   - package-ecosystem: docker
     target-branch: master
     directory: /
-      schedule:
-        interval: daily
+    schedule:
+      interval: daily
     ignore:
       - dependency-name: "amazonlinux"
         update-types: ["version-update:semver-major"]
