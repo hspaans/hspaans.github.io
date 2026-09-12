@@ -7,6 +7,7 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers-extra/features/yamllint:2": {},
 		"ghcr.io/devcontainers-extra/features/tox:2": {},
 		"ghcr.io/devcontainers-extra/features/flake8:2": {
