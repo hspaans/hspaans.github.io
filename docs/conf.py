@@ -29,7 +29,7 @@ extensions = [
 
 templates_path = ['_templates']
 exclude_patterns = [
-    ".devcontainer/*"
+    ".devcontainer/*",
     ".github/*",
     "github_submodule/*",
     "LICENSE.md",
