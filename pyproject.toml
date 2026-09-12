@@ -29,6 +29,7 @@ docs = [
     "sphinx-copybutton",
     "sphinx-notfound-page",
     "sphinx_sitemap",
+    "sphinx-github-alerts",
     "sphinx_design",
     "furo",
 ]

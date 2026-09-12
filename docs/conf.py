@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.mermaid',
     'sphinx_copybutton',
+    "sphinx_github_alerts",
     'sphinx_sitemap',
     'notfound.extension',
 ]
