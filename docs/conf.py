@@ -22,12 +22,19 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.mermaid',
     'sphinx_copybutton',
+    "sphinx_github_alerts",
     'sphinx_sitemap',
     'notfound.extension',
 ]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = [
+    ".devcontainer/*",
+    ".github/*",
+    "github_submodule/*",
+    "LICENSE.md",
+    "README.md",
+]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -120,7 +127,12 @@ if 'ablog' in extensions:
     blog_feed_length = 10
     blog_feed_author = author
     blog_feed_language = 'en'
-    blog_post_pattern = "blog/*.rst"
+    blog_post_pattern = [
+        "blog/*.rst",
+        "blog/*.md",
+        "blog/**/*.rst",
+        "blog/**/*.md",
+    ]
 
 if "notfound.extension" in extensions:
     notfound_urls_prefix = "/"
