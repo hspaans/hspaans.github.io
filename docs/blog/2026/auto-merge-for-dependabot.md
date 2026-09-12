@@ -48,7 +48,7 @@ updates:
 
 ## Setting up auto-merge for Dependabot
 
-To further automate the process, you can use GitHub Actions to automatically approve and merge Dependabot pull requests. The example workflow sored in `.github/workflows/dependabot-auto-merge.yml` shows how to enable auto-merge for Dependabot pull requests that update the Docker base image and are minor version updates.
+To further automate the process, you can use GitHub Actions to automatically approve and merge Dependabot pull requests. The example workflow sored in `.github/workflows/dependabot-auto-merge.yml` shows how to enable auto-merge for Dependabot pull requests that update the Docker base image and are patched version updates.
 
 ```yaml
 ---
