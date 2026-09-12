@@ -127,7 +127,12 @@ if 'ablog' in extensions:
     blog_feed_length = 10
     blog_feed_author = author
     blog_feed_language = 'en'
-    blog_post_pattern = "blog/*.rst"
+    blog_post_pattern = [
+        "blog/*.rst",
+        "blog/*.md",
+        "blog/**/*.rst",
+        "blog/**/*.md",
+    ]
 
 if "notfound.extension" in extensions:
     notfound_urls_prefix = "/"
