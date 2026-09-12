@@ -1,7 +1,7 @@
 ---
 blogpost: true
-date: 2026-09-09 08:00:00
-tags: GitHub, GitHub Actions, Dependabot
+date: 2026-09-12 08:00:00
+tags: GitHub, GitHub Actions, Dependabot, Supply Chain Security
 category: GitOps
 ---
 
@@ -9,10 +9,12 @@ category: GitOps
 
 [Dependabot](https://github.com/dependabot) is a service that automatically updates your project dependencies by creating pull requests. It is a great tool to keep your project up-to-date with the latest security patches and bug fixes. However, managing these pull requests can be time-consuming, especially if you have many dependencies. As a result, many teams end up ignoring Dependabot pull requests, which can lead to security vulnerabilities and other issues.
 
+> [!Warning]
+> Auto-merging should be used with caution. Ensure that only trusted dependencies are automatically merged and that your workflow conditions are well-defined to avoid merging changes that could lead to supply chain attacks.
+
 ## Setting up Dependabot
 
 The example configuration below, stored in `.github/dependabot.yml`, shows that Dependabot will automatically update the Docker base image and GitHub Actions. It ignores major version updates for Amazon Linux, Fedora, Oracle Linux, and Rocky Linux reducing the noise in the pull requests.
-
 
 ```yaml
 ---
